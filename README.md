@@ -9,6 +9,19 @@ The two most notable differences between Version 3 and Version 4 of the DCC Dwar
     
  -------------
 
+Dungeon Crawl Classics Dwarf Character Generator Version 4:
+
+https://www.oldschooladventures.org/dcc2/more/classes/dwarf/
+
+-------------
+
+
+Update 1.01: 2023-02-28
+
+The completed DCC Dwarf Character Generator has been uploaded. As well, a link to a live version of the generator has been added to the ReadMe file.
+
+
+
 Initial commit: 2023-02-27
 
 The initial commit for the DCC Dwarf Character Generator Versiont 4.
