@@ -74,19 +74,25 @@ function savingThrowWill($level)
 {
     $will = 0;
 
-    if($level >= 3 && $level <= 5)
+    if($level >= 1 && $level <= 3)
     {
         $will = 1;
     }
     
-    if($level >= 6 && $level <= 8)
+    if($level >= 4 && $level <= 6)
     {
         $will = 2;
     }
-
-    if($level >= 9)
+    
+    if($level >= 7 && $level <= 9)
     {
         $will = 3;
+    }
+
+
+    if($level == 10)
+    {
+        $will = 4;
     }
 
     return $will;
@@ -99,35 +105,40 @@ function criticalDie($level)
 
     if($level == 1)
     {
-        $critical = "1d12/III";
+        $critical = "1d10/III";
     }
 
     if($level == 2)
     {
-        $critical = "1d14/III";
+        $critical = "1d12/III";
     }
 
     if($level == 3)
     {
-        $critical = "1d16/IV";
+        $critical = "1d14/III";
     }
 
     if($level == 4)
     {
-        $critical = "1d20/IV";
+        $critical = "1d16/IV";
     }
 
     if($level == 5)
     {
+        $critical = "1d20/IV";
+    }
+
+    if($level == 6)
+    {
         $critical = "1d24/V";
     }
 
-    if($level >= 6 && $level <= 7)
+    if($level >= 7 && $level <= 8)
     {
         $critical = "1d30/V";
     }
 
-    if($level >= 8)
+    if($level >= 9)
     {
         $critical = "2d20/V";
     }
@@ -222,28 +233,6 @@ function actionDice($level)
 }
 
 
-function threatRange($level)
-{
-    $threat = "";
-
-    if($level <= 4)
-    {
-        $threat = "19-20";
-    }
-
-    if($level >= 5 && $level <= 8)
-    {
-        $threat = "18-20";
-    }
-
-    if($level >= 9)
-    {
-        $threat = "17-20";
-    }
-
-    return $threat;
-
-}
 
 function title($level, $alignment)
 {
@@ -254,72 +243,72 @@ function title($level, $alignment)
 
         if($level == 1)
         {
-            $title = "Squire";
+            $title = "Agent";
         }
         else if($level == 2)
         {
-            $title = "Champion";
+            $title = "Broker";
         }
         else if($level == 3)
         {
-            $title = "Knight";
+            $title = "Delegate";
         }
         else if($level == 4)
         {
-            $title = "Cavalier";
+            $title = "Envoy";
         }
         else
         {
-            $title = "Paladin";
+            $title = "Syndic";
         }
 
-    }
-
-    if($alignment == "Neutral")
-    {
-        if($level == 1)
-        {
-            $title = "Wilding";
-        }
-        else if($level == 2)
-        {
-            $title = "Barbarian";
-        }
-        else if($level == 3)
-        {
-            $title = "Berserker";
-        }
-        else if($level == 4)
-        {
-            $title = "Headperson";
-        }
-        else
-        {
-            $title = "Chieftain";
-        }
     }
 
     if($alignment == "Chaotic")
     {
         if($level == 1)
         {
-            $title = "Bandit";
+            $title = "Rebel";
         }
         else if($level == 2)
         {
-            $title = "Brigand";
+            $title = "Dissident";
         }
         else if($level == 3)
         {
-            $title = "Marauder";
+            $title = "Exile";
         }
         else if($level == 4)
         {
-            $title = "Ravager";
+            $title = "Iconoclast";
         }
         else
         {
-            $title = "Reaver";
+            $title = "Renegade";
+        }
+    }
+
+    if($alignment == "Neutral")
+    {
+        if($level == 1)
+        {
+            $title = "Apprentice";
+        }
+        else if($level == 2)
+        {
+            $title = "Novice";
+        }
+        else if($level == 3)
+        {
+            $title = "Journeyer";
+        }
+        else if($level == 4)
+        {
+            $title = "Crafter";
+        }
+        else
+        {
+            $title = "Thegn";
         }
     }
 

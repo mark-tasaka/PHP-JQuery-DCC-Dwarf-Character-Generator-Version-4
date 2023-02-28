@@ -5,18 +5,19 @@ function getOccupation(){
 	var occupations = [
 		//Dwarves 0 - 10
         // 4 - Herder
-        /*
-		{"occupation": "Dwarven Apothecarist", "race": "Dwarf", "trainedWeapon": "Cudgel (as Staff)", "damage": "1d4", "tradeGoods": "Steel Vial"},
-		{"occupation": "Dwarven Blacksmith", "race": "Dwarf", "trainedWeapon": "Hammer (as Club)", "damage": "1d4", "tradeGoods": "Mithril, 1 oz."},
-		{"occupation": "Dwarven Riveter", "race": "Dwarf", "trainedWeapon": "Hammer (as Club)", "damage": "1d4", "tradeGoods": "Mithril, 1 oz."},
-		{"occupation": "Dwarven Chestmaker", "race": "Dwarf", "trainedWeapon": "Chisel (as Dagger)", "damage": "1d4", "tradeGoods": "Wood, 10 lbs."},
-		{"occupation": "Dwarven Herder", "race": "Dwarf", "trainedWeapon": "Staff", "damage": "1d4", "tradeGoods": "Sow"},
-		{"occupation": "Dwarven Miner", "race": "Dwarf", "trainedWeapon": "Pick (as Club)", "damage": "1d4", "tradeGoods": "Lantern"},
-		{"occupation": "Dwarven Linkman", "race": "Dwarf", "trainedWeapon": "Pick (as Club)", "damage": "1d4", "tradeGoods": "Lantern"},
-		{"occupation": "Dwarven Mushroom Farmer", "race": "Dwarf", "trainedWeapon": "Shovel (as Staff)", "damage": "1d4", "tradeGoods": "Sack"},
-		{"occupation": "Dwarven Rat-Catcher", "race": "Dwarf", "trainedWeapon": "Club", "damage": "1d4", "tradeGoods": "Net"},
-		{"occupation": "Dwarven Stonemason", "race": "Dwarf", "trainedWeapon": "Hammer (as club)", "damage": "1d4", "tradeGoods": "Fine Stones, 10 lbs."},
-		{"occupation": "Dwarven Mason", "race": "Dwarf", "trainedWeapon": "Hammer (as club)", "damage": "1d4", "tradeGoods": "Fine Stones, 10 lbs."},
+        
+		{"occupation": "Dwarf Apothecarist", "race": "Dwarf", "trainedWeapon": "Cudgel (as Staff)", "damage": "1d4", "tradeGoods": "Steel Vial"},
+		{"occupation": "Dwarf Blacksmith", "race": "Dwarf", "trainedWeapon": "Hammer (as Club)", "damage": "1d4", "tradeGoods": "Mithril, 1 oz."},
+		{"occupation": "Dwarf Riveter", "race": "Dwarf", "trainedWeapon": "Hammer (as Club)", "damage": "1d4", "tradeGoods": "Mithril, 1 oz."},
+		{"occupation": "Dwarf Chestmaker", "race": "Dwarf", "trainedWeapon": "Chisel (as Dagger)", "damage": "1d4", "tradeGoods": "Wood, 10 lbs."},
+		{"occupation": "Dwarf Herder", "race": "Dwarf", "trainedWeapon": "Staff", "damage": "1d4", "tradeGoods": "Sow"},
+		{"occupation": "Dwarf Miner", "race": "Dwarf", "trainedWeapon": "Pick (as Club)", "damage": "1d4", "tradeGoods": "Lantern"},
+		{"occupation": "Dwarf Linkman", "race": "Dwarf", "trainedWeapon": "Pick (as Club)", "damage": "1d4", "tradeGoods": "Lantern"},
+		{"occupation": "Dwarf Mushroom Farmer", "race": "Dwarf", "trainedWeapon": "Shovel (as Staff)", "damage": "1d4", "tradeGoods": "Sack"},
+		{"occupation": "Dwarf Rat-Catcher", "race": "Dwarf", "trainedWeapon": "Club", "damage": "1d4", "tradeGoods": "Net"},
+		{"occupation": "Dwarf Stonemason", "race": "Dwarf", "trainedWeapon": "Hammer (as club)", "damage": "1d4", "tradeGoods": "Fine Stones, 10 lbs."},
+		{"occupation": "Dwarf Mason", "race": "Dwarf", "trainedWeapon": "Hammer (as club)", "damage": "1d4", "tradeGoods": "Fine Stones, 10 lbs."}
+		/*
 		//Elves 11 - 20
 		// 14 - Falconer
 		{"occupation": "Elven Artisan", "race": "Elf", "trainedWeapon": "Staff", "damage": "1d4", "tradeGoods": "Clay, 1 lbs."},
@@ -44,6 +45,7 @@ function getOccupation(){
 		//Humans 31 -
 		//Humans 31 - 40 Alchemist to Caravan Guard
 		// 32 - Animal Trainer
+		/*
 		{"occupation": "Alchemist", "race": "Human", "trainedWeapon": "Staff", "damage": "1d4", "tradeGoods": "Oil, 1 flask"},
 		{"occupation": "Animal Trainer", "race": "Human", "trainedWeapon": "Club", "damage": "1d4", "tradeGoods": "Pony"},
 		{"occupation": "Armourer", "race": "Human", "trainedWeapon": "Hammer (as Club)", "damage": "1d4", "tradeGoods": "Iron Helmet"},
@@ -123,6 +125,7 @@ function getOccupation(){
 		{"occupation": "Mercenary", "race": "Human", "trainedWeapon": "Longsword", "damage": "1d8", "tradeGoods": "4 gp, 14 sp, 27 cp"},
 		{"occupation": "Outlaw", "race": "Human", "trainedWeapon": "Short Sword", "damage": "1d6", "tradeGoods": "Leather Armour"},
 		{"occupation": "Soldier", "race": "Human", "trainedWeapon": "Spear", "damage": "1d8", "tradeGoods": "Shield"}
+		*/
 		];
 	
 		return occupations[Math.floor(Math.random() * occupations.length)]; 

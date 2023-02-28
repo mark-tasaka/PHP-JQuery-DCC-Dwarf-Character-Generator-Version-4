@@ -281,7 +281,7 @@
 
       // $attackBonus = attackBonus($level);
        $deedDie = deedDie($level);
-       $threatRange = threatRange($level);
+      // $threatRange = threatRange($level);
 
        $actionDice = actionDice($level);
 
@@ -568,14 +568,6 @@
         </span>
 
         
-        
-        <span id="threatRange">
-            <?php
-                echo $threatRange;
-            ?>
-        </span>
-
-        
 
         <span id="initiative">
         </span>
@@ -727,7 +719,7 @@
             "move": <?php echo $speed ?> + addLuckToSpeed (birthAugur, luckMod),
             "trainedWeapon": profession.trainedWeapon,
             "tradeGoods": profession.tradeGoods,
-            "addLanguages": "Common" + bonusLanguages,
+            "addLanguages": "Common, Dwarf" + bonusLanguages,
             "armourClass": <?php echo $totalAcDefense ?> + baseAC,
             "hp": getHitPoints (level, staminaMod) + hitPointAdjustPerLevel(birthAugur,  luckMod),
 			"melee": strengthMod + meleeAdjust(birthAugur, luckMod),
